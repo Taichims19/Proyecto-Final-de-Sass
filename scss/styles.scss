@@ -1,0 +1,26 @@
+//aqui se importan los componentes del proyecto
+
+// Config
+@import "config";
+
+//estilos base
+@import "base/base";
+
+// Layout
+@import "layout/grid";
+@import "layout/header";
+
+
+// Modules 
+@import "modules/buttons";
+@import "modules/cards";
+@import "modules/menu";
+@import "modules/tabs";
+
+// Components 
+@import "components/class";
+@import "components/course";
+@import "components/courses";
+@import "components/login";
+@import "components/questions";
+@import "components/user-profile";
