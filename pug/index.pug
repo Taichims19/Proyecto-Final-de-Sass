@@ -7,7 +7,7 @@ append config
 block main
     .main-home
         img(src="img/logo.png"  ).logo 
-        form.login-form
+        form.login-form(action="cursos.html" method="get" target="_blank")
             .login-form__item
                 label(for="username").login-form__label <i class="fa-solid fa-user"></i> Nombre de Usuario 
                 input(type="text" name="username" id="username").login-form__input  
@@ -15,7 +15,7 @@ block main
                 label(for="password").login-form__label <i class="fa-solid fa-lock"></i> Contraseña 
                 input(type="password" name="password" id="password").login-form__input
 
-            input(type="submit" value="Ingresar").login-form__submit.button.cta
+            input(type="submit" value="Ingresar" class="login-form__submit button cta login-form__submit--redirect" target="_blank")
 
-        .reset-password ¿Ha olvidado su Contraseña? 
-                a(href="#") Recuperar 
+
+        a(href="#").reset-password ¿Ha olvidado su Contraseña? 
