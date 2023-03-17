@@ -1,0 +1,28 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/css",
+            "filename": "styles.css",
+            "command": "--no-source-map --use=math"
+        }
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        "**/*.map",
+        "!scss/base/base.scss"
+    ],
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "liveSassCompile.settings.useBrowserslist": true,
+    "liveSassCompile.settings.formatsAutoCleanEmptyLines": true
+    "liveSassCompile.settings.showOutputWindow": true,
+"liveSassCompile.settings.useBundles": true,
+"liveSassCompile.settings.generateMinifiedCss": false,
+
+}
+

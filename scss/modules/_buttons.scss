@@ -1,0 +1,14 @@
+.button {
+  display: inline-block;
+  line-height: 2.5;
+  padding: 0 1.5em;
+  border: none;
+
+  &.cta {
+    background: color(rojo);
+    color: color(blanco);
+    display: table;
+    margin: 2em auto;
+  }
+}
+

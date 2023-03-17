@@ -1,2 +1,38 @@
-@import "normalize";
-@import "custom.base";
+@import "normalize.scss";
+@import "../config";
+@import "../components/class";
+@import "../components/course";
+@import "../components/courses";
+@import "../components/login.scss";
+@import "../components/questions";
+@import "../components/user-profile";
+@import "../modules/buttons";
+@import "../modules/cards";
+@import "../modules/menu";
+@import "../modules/tabs";
+
+//estilos creados
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $font-size;
+    line-height: 1.5;
+    font-family: $main-font;
+    color: color(gris-oscuro);
+}
+h1 {
+    font-size: $h1-size;
+}
+h2 {
+    font-size: $h2-size;
+}
+h3 {
+    font-size: $h3-size;
+}
+h1,h2,h3 {
+    line-height: 1.3;
+    font-weight: $light;
+    color: color(gris-oscuro);
+}
