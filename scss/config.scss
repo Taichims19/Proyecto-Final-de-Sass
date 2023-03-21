@@ -1,27 +1,34 @@
-//Import de funciones y mas 
+//Import de funciones y mas
 @use "sass:math";
-
 
 //aqui se guardan las variables
 
 //Importar tipografia
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
 
+//importar iconos
+@import url("https://kit.fontawesome.com/36f2e0049f.js");
 //fuentes
 $main-font: "Ubuntu", sans-serif;
 $light: 300;
 $normal: 400;
 
+//guter
+$gutter:1em;
 //Convertir px a em
 @function em($el, $parent: 16px) {
   $em: math.div($el, $parent) * 1em;
   @return $em;
 }
+@function rem($el, $parent: 16px) {
+  $rem: math.div($el, $parent) * 1rem;
+  @return $rem;
+}
 
 $font-size: em(14px);
-$h3-size:$font-size * 1.15;
-$h2-size:$font-size * 1.35;
-$h1-size:$font-size * 1.7;
+$h3-size: $font-size * 1.15;
+$h2-size: $font-size * 1.35;
+$h1-size: $font-size * 1.7;
 
 $colors: (
   azul-base: #00b1f3,
@@ -33,7 +40,7 @@ $colors: (
   gris-oscuro: #19242b,
   gris-claro: #cdcdcd,
   success: #00cb30,
-  blanco: #ffffff
+  blanco: #ffffff,
 );
 //funcion para obtener color
 //@function color($color){
@@ -51,6 +58,6 @@ $colors: (
 }
 
 //funcion para obtener imagenes
-@function img($img){
-  @return url('../img/#{$img}');
+@function img($img) {
+  @return url("../img/#{$img}");
 }

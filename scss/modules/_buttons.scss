@@ -10,5 +10,19 @@
     display: table;
     margin: 2em auto;
   }
+  &:hover {
+    cursor: pointer;
+    color: color(azul-base);
+  }
 }
 
+.recuperar {
+  color: color(rojo);
+  &:active {
+    color: color(azul-claro);
+  }
+  &:hover {
+    cursor: pointer;
+    color: color(azul-medio);
+  }
+}

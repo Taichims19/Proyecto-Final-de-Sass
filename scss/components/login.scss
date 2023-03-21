@@ -9,6 +9,7 @@
   justify-content: center;
   background: img("home-bg.png");
   background-color: rgba(255, 255, 255, 1);
+  
  
 }
 
@@ -17,7 +18,7 @@
   width: em(math.div(332px, 2));
   display: block;
   margin: 0 auto;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 //formulario inicio de seccion
 .login-form {
@@ -39,10 +40,11 @@
     display: block;
     position: absolute;
     line-height: 1.5rem;
-    padding-left: 1.5em;
+    padding-left: 2.5em;
     font-size: 0.9em;
     .fa-solid {
       padding-right: 0.5em;
+    
     }
   }
   &__submit {

@@ -6,7 +6,17 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+@import url("https://kit.fontawesome.com/36f2e0049f.js");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+@import url("https://kit.fontawesome.com/36f2e0049f.js");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+@import url("https://kit.fontawesome.com/36f2e0049f.js");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+@import url("https://kit.fontawesome.com/36f2e0049f.js");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+@import url("https://kit.fontawesome.com/36f2e0049f.js");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+@import url("https://kit.fontawesome.com/36f2e0049f.js");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -313,6 +323,68 @@ template {
   display: none;
 }
 
+.course-card {
+  position: relative;
+  top: 5.6em;
+  height: 15.625em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 2em;
+  z-index: 0;
+}
+.course-card__img:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.course-card__img {
+  display: block;
+  max-width: 100vw;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.course-card__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.85em;
+}
+.course-card__progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.course-card__progress__bar {
+  border: 1px solid #ffffff;
+  width: 4.375rem;
+  height: 1rem;
+  margin-right: 0.5em;
+  background: linear-gradient(120deg, #ff3532 70%, transparent 70%);
+}
+.course-card .icon-star {
+  position: absolute;
+  bottom: 11em;
+  left: 1em;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #29daff;
+}
+
 .login-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -332,7 +404,7 @@ template {
   width: 10.375em;
   display: block;
   margin: 0 auto;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 .login-form {
@@ -354,7 +426,7 @@ template {
   display: block;
   position: absolute;
   line-height: 1.5rem;
-  padding-left: 1.5em;
+  padding-left: 2.5em;
   font-size: 0.9em;
 }
 .login-form__label .fa-solid {
@@ -378,6 +450,51 @@ template {
   margin-left: 0.5em;
 }
 
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  z-index: 1000;
+  background: #03151f url("../img/logo-footer.png") no-repeat left bottom/100px;
+  height: 100%;
+}
+.main-nav__header {
+  background: #006bab;
+  color: #ffffff;
+  padding: 2.5em 1em;
+}
+.main-nav__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main-nav__user__img {
+  width: 3.5em;
+  height: 3.5em;
+  margin-right: 1em;
+}
+.main-nav .main-nav__user__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main-nav .main-nav__user__data__name {
+  font-size: 1.5em;
+  line-height: 1;
+}
+.main-nav .main-nav__user__data__bio {
+  font-size: 0.85em;
+  line-height: 1;
+}
+
 .button {
   display: inline-block;
   line-height: 2.5;
@@ -389,6 +506,70 @@ template {
   color: #ffffff;
   display: table;
   margin: 2em auto;
+}
+.button:hover {
+  cursor: pointer;
+  color: #00b1f3;
+}
+
+.recuperar {
+  color: #ff3532;
+}
+.recuperar:active {
+  color: #29daff;
+}
+.recuperar:hover {
+  cursor: pointer;
+  color: #006bab;
+}
+
+.main-menu {
+  list-style: none;
+  margin: 2em 0 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.main-menu__link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  font-weight: 300;
+  display: block;
+  line-height: 2.5;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.main-menu__link i {
+  font-size: 16px;
+}
+.main-menu__link span {
+  padding-left: 1em;
+}
+
+.main-header {
+  background-color: #006bab;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1em;
+  height: 3.125rem;
+  line-height: 3.125rem;
+  font-size: 1.5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.main-header h2 {
+  line-height: 0.3em;
+  padding-left: 1em;
+  color: #ffffff;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+}
+.main-header .icon-menu {
+  font-size: 1.5em;
 }
 
 * {
@@ -415,8 +596,14 @@ h3 {
   font-size: 1.00625em;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.3;
   font-weight: 300;
   color: #19242b;
+}
+
+img {
+  max-width: 100%;
 }/*# sourceMappingURL=base.css.map */
