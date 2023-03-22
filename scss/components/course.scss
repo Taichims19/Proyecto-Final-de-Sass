@@ -1,1 +1,83 @@
+@use "sass:math";
+@import "../config.scss";
+
 // vista de curso
+
+.course-header {
+  position: relative;
+  margin-bottom: 4em;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 40px;
+    background: rgba(#000, 0.5);
+    display: block;
+    position: absolute;
+    //para ubicarlo en el bottom del poster
+    bottom: 46px;
+  }
+  .course-img {
+    height: 200px;
+    width: 100vw;
+  }
+  &__teacher {
+    margin-top: -60px;
+    padding: 0 $gutter;
+    display: flex;
+    height: rem(100px);
+    position: relative;
+    z-index: 500;
+    &__img {
+      width: rem(100px);
+      box-shadow: 0 0 0 1px color(gris-claro);
+    }
+
+    &__data {
+      display: flex;
+      flex-direction: column;
+      padding-left: $gutter;
+    }
+    &__question {
+      margin-top: auto;
+      display: table;
+    }
+    &__name {
+      font-size: 1.5em;
+      color: color(blanco);
+      margin-top: 0.7em;
+      small {
+        font-size: 0.7em;
+        color: color(blanco);
+        display: inline-block;
+        margin-left: 0.5em;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.content{
+  padding: 0 $gutter;
+  margin-top: 3em;
+  .content-title {
+    font-weight: 400;
+    text-align: center;
+  }
+}
+.course-content {
+    &__item {
+        padding: 0.8em 0;
+        border-bottom: 1px solid color(gris-claro);
+        
+
+        i {
+            padding-right: 0.5em;
+        }
+        a {
+        text-decoration: none;
+        font-size: 16px;
+        color: color(azul-oscuro);
+
+        }
+    }
+}

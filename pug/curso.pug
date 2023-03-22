@@ -1,0 +1,65 @@
+extends  template/template
+
+append config 
+    - currentPage = "course-page"
+    - title = "Sass desde Cero"
+block header
+    include blocks/header
+    
+block main 
+    header.course-header 
+        img(src="img/course-poster6.png").course-img
+        .course-header__teacher 
+            img(src="img/teacher.png").course-header__teacher__img
+            .course-header__teacher__data 
+                .course-header__teacher__name Alvaro Felipe
+                    small profesor
+                a(href="#").course-header__teacher__question.button.cta Solicitar asesoria
+    section.content 
+        h1.content-title Contenido del curso 
+
+        div.course-content__item
+        
+           div.course-content__item
+                i.fa.fa-circle-play.solid
+                a(href='#') 01. Introducción a Sass
+
+           div.course-content__item
+                i.fa.fa-circle-play.solid
+                a(href='#') 02. Sintaxis de Sass
+
+           div.course-content__item
+                i.fa.fa-circle-play.solid
+                a(href='#') 03. Tipos de datos en Sass
+
+           div.course-content__item
+                i.fa.fa-circle-play.solid
+                a(href='#') 04. Mixins en Sass
+
+           div.course-content__item
+                i.fa.fa-circle-play.solid
+                a(href='#') 05. Placeholder en Sass
+
+           div.course-content__item
+                i.fa.fa-circle-play.solid
+                a(href='#') 06. Funciones en Sass
+
+           div.course-content__item
+                i.fa.fa-circle-play.solid
+                a(href='#') 07. Condiciones en Sass
+
+           div.course-content__item
+                i.fa.fa-circle-play.solid
+                a(href='#') 08. Iteraciones en Sass
+
+           div.course-content__item
+                i.fa.fa-circle-play.solid
+                a(href='#') 09. List y maps en Sass
+
+           div.course-content__item
+                i.fa.fa-circle-play.solid
+                a(href='#') 10. Colores Sass
+
+           div.course-content__item
+                i.fa.fa-circle-play.solid
+                a(href='#') 11. Debuggin en Sass

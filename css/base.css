@@ -17,6 +17,8 @@
 @import url("https://kit.fontawesome.com/36f2e0049f.js");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
 @import url("https://kit.fontawesome.com/36f2e0049f.js");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+@import url("https://kit.fontawesome.com/36f2e0049f.js");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -323,6 +325,87 @@ template {
   display: none;
 }
 
+.course-header {
+  position: relative;
+  margin-bottom: 4em;
+}
+.course-header::before {
+  content: "";
+  width: 100%;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+  position: absolute;
+  bottom: 46px;
+}
+.course-header .course-img {
+  height: 200px;
+  width: 100vw;
+}
+.course-header__teacher {
+  margin-top: -60px;
+  padding: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 6.25rem;
+  position: relative;
+  z-index: 500;
+}
+.course-header__teacher__img {
+  width: 6.25rem;
+  -webkit-box-shadow: 0 0 0 1px #cdcdcd;
+          box-shadow: 0 0 0 1px #cdcdcd;
+}
+.course-header__teacher__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 1em;
+}
+.course-header__teacher__question {
+  margin-top: auto;
+  display: table;
+}
+.course-header__teacher__name {
+  font-size: 1.5em;
+  color: #ffffff;
+  margin-top: 0.7em;
+}
+.course-header__teacher__name small {
+  font-size: 0.7em;
+  color: #ffffff;
+  display: inline-block;
+  margin-left: 0.5em;
+  opacity: 0.8;
+}
+
+.content {
+  padding: 0 1em;
+  margin-top: 3em;
+}
+.content .content-title {
+  font-weight: 400;
+  text-align: center;
+}
+
+.course-content__item {
+  padding: 0.8em 0;
+  border-bottom: 1px solid #cdcdcd;
+}
+.course-content__item i {
+  padding-right: 0.5em;
+}
+.course-content__item a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #03151f;
+}
+
 .course-card {
   position: relative;
   top: 5.6em;
@@ -500,6 +583,7 @@ template {
   line-height: 2.5;
   padding: 0 1.5em;
   border: none;
+  text-decoration: none;
 }
 .button.cta {
   background: #ff3532;
@@ -532,11 +616,11 @@ template {
 .main-menu__link {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
-  font-size: 1.25em;
+  font-size: 1.2em;
   text-transform: uppercase;
   font-weight: 300;
   display: block;
-  line-height: 2.5;
+  line-height: 3;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .main-menu__link i {
@@ -559,7 +643,8 @@ template {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  border-bottom: 2px solid rgba(3, 21, 31, 0.2);
+  z-index: 700;
 }
 .main-header h2 {
   line-height: 0.3em;
